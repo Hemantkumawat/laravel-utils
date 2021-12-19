@@ -48,13 +48,13 @@ class VueJsLayoutPublishCommand extends PublishBaseCommand
 
     private function copyView()
     {
-        $viewsPath = config('hemant.laravel_generator.path.views', base_path('resources/views/'));
-        $resourcesPath = config('hemant.laravel_generator.path.resourcesPath', base_path('resources/'));
+        $viewsPath = config('hemant.laravel_utils.path.views', base_path('resources/views/'));
+        $resourcesPath = config('hemant.laravel_utils.path.resourcesPath', base_path('resources/'));
         $vendorPath = $resourcesPath.'assets/vendor/';
-        $assetsJsPath = config('hemant.laravel_generator.path.assetsJsPath', base_path('resources/assets/js/'));
-        $assetsCssPath = config('hemant.laravel_generator.path.assetsCssPath', base_path('resources/assets/css/'));
-        $templateType = config('hemant.laravel_generator.templates', 'core-templates');
-        $requestPath = config('hemant.laravel_generator.path.api_request', base_path('app/Http/Requests/'));
+        $assetsJsPath = config('hemant.laravel_utils.path.assetsJsPath', base_path('resources/assets/js/'));
+        $assetsCssPath = config('hemant.laravel_utils.path.assetsCssPath', base_path('resources/assets/css/'));
+        $templateType = config('hemant.laravel_utils.templates', 'core-templates');
+        $requestPath = config('hemant.laravel_utils.path.api_request', base_path('app/Http/Requests/'));
 
         $this->createDirectories($viewsPath);
         $this->createVueJsDirectories($viewsPath, $resourcesPath);
@@ -212,7 +212,7 @@ class VueJsLayoutPublishCommand extends PublishBaseCommand
 
     private function updateRoutes()
     {
-        $path = config('hemant.laravel_generator.path.routes', app_path('Http/routes.php'));
+        $path = config('hemant.laravel_utils.path.routes', app_path('Http/routes.php'));
         $routeContents = file_get_contents($path);
 
         $routesTemplate = get_template('routes.auth', 'laravel-generator');
@@ -234,7 +234,7 @@ class VueJsLayoutPublishCommand extends PublishBaseCommand
 
         $templateData = $this->fillTemplate($templateData);
 
-        $controllerPath = config('hemant.laravel_generator.path.controller', app_path('Http/Controllers/'));
+        $controllerPath = config('hemant.laravel_utils.path.controller', app_path('Http/Controllers/'));
 
         $fileName = 'HomeController.php';
 
@@ -262,12 +262,12 @@ class VueJsLayoutPublishCommand extends PublishBaseCommand
     {
         $templateData = str_replace(
             '$NAMESPACE_CONTROLLER$',
-            config('hemant.laravel_generator.namespace.controller'), $templateData
+            config('hemant.laravel_utils.namespace.controller'), $templateData
         );
 
         $templateData = str_replace(
             '$NAMESPACE_REQUEST$',
-            config('hemant.laravel_generator.namespace.request'), $templateData
+            config('hemant.laravel_utils.namespace.request'), $templateData
         );
 
         return $templateData;

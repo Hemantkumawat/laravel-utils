@@ -36,7 +36,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Hemant\\LaravelUtils\\": "src/"
+            "Hemant\\Utils\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -50,7 +50,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\Hemant\\LaravelUtils\\HemantLaravelUtilsServiceProvider"
+                "\\Hemant\\Utils\\HemantLaravelUtilsServiceProvider"
             ]
         }
     }

@@ -142,7 +142,7 @@ class ModelGenerator extends BaseGenerator
                 $templateData
             );
             $templateData = str_replace('$SOFT_DELETE$', infy_tab()."use SoftDeletes;\n", $templateData);
-            $deletedAtTimestamp = config('hemant.laravel_generator.timestamps.deleted_at', 'deleted_at');
+            $deletedAtTimestamp = config('hemant.laravel_utils.timestamps.deleted_at', 'deleted_at');
             $templateData = str_replace(
                 '$SOFT_DELETE_DATES$', infy_nl_tab()."protected \$dates = ['".$deletedAtTimestamp."'];\n",
                 $templateData

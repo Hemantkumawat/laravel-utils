@@ -27,11 +27,11 @@ class MenuGenerator extends BaseGenerator
     {
         $this->commandData = $commandData;
         $this->path = config(
-            'hemant.laravel_generator.path.views',
+            'hemant.laravel_utils.path.views',
             base_path('resources/views/'
             )
         ).$commandData->getAddOn('menu.menu_file');
-        $this->templateType = config('hemant.laravel_generator.templates', 'adminlte-templates');
+        $this->templateType = config('hemant.laravel_utils.templates', 'adminlte-templates');
 
         $this->menuContents = file_get_contents($this->path);
 

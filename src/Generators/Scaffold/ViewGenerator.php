@@ -34,7 +34,7 @@ class ViewGenerator extends BaseGenerator
         $this->commandData = $commandData;
         $this->path = $commandData->config->pathViews;
         $this->langManager = new Manager(new Filesystem(), config('langman.path'), []);
-        $this->templateType = config('hemant.laravel_generator.templates', 'adminlte-templates');
+        $this->templateType = config('hemant.laravel_utils.templates', 'adminlte-templates');
     }
 
     public function generate()
@@ -372,7 +372,7 @@ class ViewGenerator extends BaseGenerator
                 '$MODEL_NAME_SNAKE$' => $field->custom_field_model
             ];
             $field->htmlType = $field['type'];
-            $fieldTemplate = HTMLFieldGenerator::generateHTML($field, config('hemant.laravel_generator.templates', 'adminlte-templates'));
+            $fieldTemplate = HTMLFieldGenerator::generateHTML($field, config('hemant.laravel_utils.templates', 'adminlte-templates'));
 
             if (!empty($fieldTemplate)) {
                 foreach ($dynamicVars as $variable => $value) {

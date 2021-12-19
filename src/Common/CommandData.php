@@ -204,7 +204,7 @@ class CommandData
                 } elseif (file_exists(base_path($fieldsFileValue))) {
                     $filePath = base_path($fieldsFileValue);
                 } else {
-                    $schemaFileDirector = config('hemant.laravel_generator.path.schema_files');
+                    $schemaFileDirector = config('hemant.laravel_utils.path.schema_files');
                     $filePath = $schemaFileDirector.$fieldsFileValue;
                 }
 

@@ -19,7 +19,7 @@ class MigrationGenerator extends BaseGenerator
     public function __construct($commandData)
     {
         $this->commandData = $commandData;
-        $this->path = config('hemant.laravel_generator.path.migration', base_path('database/migrations/'));
+        $this->path = config('hemant.laravel_utils.path.migration', base_path('database/migrations/'));
     }
 
     public function generate()

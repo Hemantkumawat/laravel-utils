@@ -40,8 +40,8 @@ class GeneratorPublishCommand extends PublishBaseCommand
      */
     private function fillTemplate($templateData)
     {
-        $apiVersion = config('hemant.laravel_generator.api_version', 'v1');
-        $apiPrefix = config('hemant.laravel_generator.api_prefix', 'api');
+        $apiVersion = config('hemant.laravel_utils.api_version', 'v1');
+        $apiPrefix = config('hemant.laravel_utils.api_prefix', 'api');
 
         $templateData = str_replace('$API_VERSION$', $apiVersion, $templateData);
         $templateData = str_replace('$API_PREFIX$', $apiPrefix, $templateData);
@@ -56,7 +56,7 @@ class GeneratorPublishCommand extends PublishBaseCommand
     {
         $traitPath = __DIR__.'/../../../templates/test/api_test_trait.stub';
 
-        $testsPath = config('hemant.laravel_generator.path.api_test', base_path('tests/'));
+        $testsPath = config('hemant.laravel_utils.path.api_test', base_path('tests/'));
 
         $this->publishFile($traitPath, $testsPath.'ApiTestTrait.php', 'ApiTestTrait.php');
 

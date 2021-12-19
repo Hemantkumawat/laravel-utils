@@ -64,7 +64,7 @@ class TableFieldsGenerator
 
         $this->primaryKey = static::getPrimaryKeyOfTable($tableName);
         $this->timestamps = static::getTimestampFieldNames();
-        $this->defaultSearchable = config('hemant.laravel_generator.options.tables_searchable_default', false);
+        $this->defaultSearchable = config('hemant.laravel_utils.options.tables_searchable_default', false);
     }
 
     /**
@@ -155,13 +155,13 @@ class TableFieldsGenerator
      */
     public static function getTimestampFieldNames()
     {
-        if (!config('hemant.laravel_generator.timestamps.enabled', true)) {
+        if (!config('hemant.laravel_utils.timestamps.enabled', true)) {
             return [];
         }
 
-        $createdAtName = config('hemant.laravel_generator.timestamps.created_at', 'created_at');
-        $updatedAtName = config('hemant.laravel_generator.timestamps.updated_at', 'updated_at');
-        $deletedAtName = config('hemant.laravel_generator.timestamps.deleted_at', 'deleted_at');
+        $createdAtName = config('hemant.laravel_utils.timestamps.created_at', 'created_at');
+        $updatedAtName = config('hemant.laravel_utils.timestamps.updated_at', 'updated_at');
+        $deletedAtName = config('hemant.laravel_utils.timestamps.deleted_at', 'deleted_at');
 
         return [$createdAtName, $updatedAtName, $deletedAtName];
     }

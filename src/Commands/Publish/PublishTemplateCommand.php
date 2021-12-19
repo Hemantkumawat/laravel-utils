@@ -28,7 +28,7 @@ class PublishTemplateCommand extends PublishBaseCommand
     public function handle()
     {
         $this->templatesDir = config(
-            'hemant.laravel_generator.path.templates_dir',
+            'hemant.laravel_utils.path.templates_dir',
             base_path('resources/hemant/hemant-generator-templates/')
         );
 
@@ -52,7 +52,7 @@ class PublishTemplateCommand extends PublishBaseCommand
      */
     public function publishScaffoldTemplates()
     {
-        $templateType = config('hemant.laravel_generator.templates', 'adminlte-templates');
+        $templateType = config('hemant.laravel_utils.templates', 'adminlte-templates');
 
         $templatesPath = base_path('vendor/hemantlabs/'.$templateType.'/templates/scaffold');
 

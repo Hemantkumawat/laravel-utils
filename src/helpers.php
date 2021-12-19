@@ -88,7 +88,7 @@ if (!function_exists('get_template_file_path')) {
         $templateName = str_replace('.', '/', $templateName);
 
         $templatesPath = config(
-            'hemant.laravel_generator.path.templates_dir',
+            'hemant.laravel_utils.path.templates_dir',
             base_path('resources/hemant/hemant-generator-templates/')
         );
 

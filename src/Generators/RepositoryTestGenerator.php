@@ -19,7 +19,7 @@ class RepositoryTestGenerator extends BaseGenerator
     public function __construct($commandData)
     {
         $this->commandData = $commandData;
-        $this->path = config('hemant.laravel_generator.path.repository_test', base_path('tests/'));
+        $this->path = config('hemant.laravel_utils.path.repository_test', base_path('tests/'));
         $this->fileName = $this->commandData->modelName.'RepositoryTest.php';
     }
 

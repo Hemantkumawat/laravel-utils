@@ -33,10 +33,10 @@ class HemantLaravelUtilsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__.'/../config/laravel_generator.php';
+        $configPath = __DIR__.'/../config/laravel_utils.php';
 
         $this->publishes([
-            $configPath => config_path('hemant/laravel_generator.php'),
+            $configPath => config_path('hemant/laravel_utils.php'),
         ]);
     }
 

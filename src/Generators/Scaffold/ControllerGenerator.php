@@ -30,7 +30,7 @@ class ControllerGenerator extends BaseGenerator
         $this->commandData = $commandData;
         $this->path = $commandData->config->pathController;
         $this->mSnake = $commandData->config->mSnake;
-        $this->templateType = config('hemant.laravel_generator.templates', 'adminlte-templates');
+        $this->templateType = config('hemant.laravel_utils.templates', 'adminlte-templates');
         $this->fileName = $this->commandData->modelName . 'Controller.php';
     }
 

@@ -116,27 +116,27 @@ class GeneratorConfig
 
         $this->nsApp = $commandData->commandObj->getLaravel()->getNamespace();
         $this->nsApp = substr($this->nsApp, 0, strlen($this->nsApp) - 1);
-        $this->nsRepository = config('hemant.laravel_generator.namespace.repository', 'App\Repositories').$prefix;
-        $this->nsModel = config('hemant.laravel_generator.namespace.model', 'App\Models').$prefix;
-        if (config('hemant.laravel_generator.ignore_model_prefix', false)) {
-            $this->nsModel = config('hemant.laravel_generator.namespace.model', 'App\Models');
+        $this->nsRepository = config('hemant.laravel_utils.namespace.repository', 'App\Repositories').$prefix;
+        $this->nsModel = config('hemant.laravel_utils.namespace.model', 'App\Models').$prefix;
+        if (config('hemant.laravel_utils.ignore_model_prefix', false)) {
+            $this->nsModel = config('hemant.laravel_utils.namespace.model', 'App\Models');
         }
-        $this->nsDataTables = config('hemant.laravel_generator.namespace.datatables', 'App\DataTables').$prefix;
+        $this->nsDataTables = config('hemant.laravel_utils.namespace.datatables', 'App\DataTables').$prefix;
         $this->nsModelExtend = config(
-            'hemant.laravel_generator.model_extend_class',
+            'hemant.laravel_utils.model_extend_class',
             'Illuminate\Database\Eloquent\Model'
         );
 
         $this->nsApiController = config(
-            'hemant.laravel_generator.namespace.api_controller',
+            'hemant.laravel_utils.namespace.api_controller',
             'App\Http\Controllers\API'
         ).$prefix;
-        $this->nsApiRequest = config('hemant.laravel_generator.namespace.api_request', 'App\Http\Requests\API').$prefix;
+        $this->nsApiRequest = config('hemant.laravel_utils.namespace.api_request', 'App\Http\Requests\API').$prefix;
 
-        $this->nsRequest = config('hemant.laravel_generator.namespace.request', 'App\Http\Requests').$prefix;
-        $this->nsRequestBase = config('hemant.laravel_generator.namespace.request', 'App\Http\Requests');
-        $this->nsBaseController = config('hemant.laravel_generator.namespace.controller', 'App\Http\Controllers');
-        $this->nsController = config('hemant.laravel_generator.namespace.controller', 'App\Http\Controllers').$prefix;
+        $this->nsRequest = config('hemant.laravel_utils.namespace.request', 'App\Http\Requests').$prefix;
+        $this->nsRequestBase = config('hemant.laravel_utils.namespace.request', 'App\Http\Requests');
+        $this->nsBaseController = config('hemant.laravel_utils.namespace.controller', 'App\Http\Controllers');
+        $this->nsController = config('hemant.laravel_utils.namespace.controller', 'App\Http\Controllers').$prefix;
     }
 
     public function loadPaths()
@@ -154,51 +154,51 @@ class GeneratorConfig
         }
 
         $this->pathRepository = config(
-            'hemant.laravel_generator.path.repository',
+            'hemant.laravel_utils.path.repository',
             app_path('Repositories/')
         ).$prefix;
 
-        $this->pathModel = config('hemant.laravel_generator.path.model', app_path('Models/')).$prefix;
-        if (config('hemant.laravel_generator.ignore_model_prefix', false)) {
-            $this->pathModel = config('hemant.laravel_generator.path.model', app_path('Models/'));
+        $this->pathModel = config('hemant.laravel_utils.path.model', app_path('Models/')).$prefix;
+        if (config('hemant.laravel_utils.ignore_model_prefix', false)) {
+            $this->pathModel = config('hemant.laravel_utils.path.model', app_path('Models/'));
         }
 
-        $this->pathDataTables = config('hemant.laravel_generator.path.datatables', app_path('DataTables/')).$prefix;
+        $this->pathDataTables = config('hemant.laravel_utils.path.datatables', app_path('DataTables/')).$prefix;
 
         $this->pathApiController = config(
-            'hemant.laravel_generator.path.api_controller',
+            'hemant.laravel_utils.path.api_controller',
             app_path('Http/Controllers/API/')
         ).$prefix;
 
         $this->pathApiRequest = config(
-            'hemant.laravel_generator.path.api_request',
+            'hemant.laravel_utils.path.api_request',
             app_path('Http/Requests/API/')
         ).$prefix;
 
-        $this->pathApiRoutes = config('hemant.laravel_generator.path.api_routes', app_path('Http/api_routes.php'));
+        $this->pathApiRoutes = config('hemant.laravel_utils.path.api_routes', app_path('Http/api_routes.php'));
 
-        $this->pathApiTests = config('hemant.laravel_generator.path.api_test', base_path('tests/'));
+        $this->pathApiTests = config('hemant.laravel_utils.path.api_test', base_path('tests/'));
 
-        $this->pathApiTestTraits = config('hemant.laravel_generator.path.test_trait', base_path('tests/traits/'));
+        $this->pathApiTestTraits = config('hemant.laravel_utils.path.test_trait', base_path('tests/traits/'));
 
         $this->pathController = config(
-            'hemant.laravel_generator.path.controller',
+            'hemant.laravel_utils.path.controller',
             app_path('Http/Controllers/')
         ).$prefix;
 
-        $this->pathRequest = config('hemant.laravel_generator.path.request', app_path('Http/Requests/')).$prefix;
+        $this->pathRequest = config('hemant.laravel_utils.path.request', app_path('Http/Requests/')).$prefix;
 
-        $this->pathRoutes = config('hemant.laravel_generator.path.routes', app_path('Http/routes.php'));
+        $this->pathRoutes = config('hemant.laravel_utils.path.routes', app_path('Http/routes.php'));
 
-        $this->pathLang = config('hemant.laravel_generator.path.lang', base_path('resources/lang/en/lang.php'));
+        $this->pathLang = config('hemant.laravel_utils.path.lang', base_path('resources/lang/en/lang.php'));
 
         $this->pathViews = config(
-            'hemant.laravel_generator.path.views',
+            'hemant.laravel_utils.path.views',
             base_path('resources/views/')
         ).$viewPrefix.$this->mSnakePlural.'/';
 
         $this->modelJsPath = config(
-                'hemant.laravel_generator.path.modelsJs',
+                'hemant.laravel_utils.path.modelsJs',
                 base_path('resources/assets/js/models/')
         );
     }
@@ -264,12 +264,12 @@ class GeneratorConfig
 
         $commandData->addDynamicVariable(
             '$API_PREFIX$',
-            config('hemant.laravel_generator.api_prefix', 'api')
+            config('hemant.laravel_utils.api_prefix', 'api')
         );
 
         $commandData->addDynamicVariable(
             '$API_VERSION$',
-            config('hemant.laravel_generator.api_version', 'v1')
+            config('hemant.laravel_utils.api_version', 'v1')
         );
 
         return $commandData;
@@ -321,7 +321,7 @@ class GeneratorConfig
             }
         }
 
-        $this->options['softDelete'] = config('hemant.laravel_generator.options.softDelete', false);
+        $this->options['softDelete'] = config('hemant.laravel_utils.options.softDelete', false);
         if (!empty($this->options['skip'])) {
             $skips = array_map('trim', explode(',', $this->options['skip']));
             if(in_array('*',$skips)){
@@ -342,10 +342,10 @@ class GeneratorConfig
 
     public function preparePrefixes()
     {
-        $this->prefixes['route'] = explode('/', config('hemant.laravel_generator.prefixes.route', ''));
-        $this->prefixes['path'] = explode('/', config('hemant.laravel_generator.prefixes.path', ''));
-        $this->prefixes['view'] = explode('.', config('hemant.laravel_generator.prefixes.view', ''));
-        $this->prefixes['public'] = explode('/', config('hemant.laravel_generator.prefixes.public', ''));
+        $this->prefixes['route'] = explode('/', config('hemant.laravel_utils.prefixes.route', ''));
+        $this->prefixes['path'] = explode('/', config('hemant.laravel_utils.prefixes.path', ''));
+        $this->prefixes['view'] = explode('.', config('hemant.laravel_utils.prefixes.view', ''));
+        $this->prefixes['public'] = explode('/', config('hemant.laravel_utils.prefixes.public', ''));
 
         if ($this->getOption('prefix')) {
             $multiplePrefixes = explode(',', $this->getOption('prefix'));
@@ -466,10 +466,10 @@ class GeneratorConfig
 
     public function prepareAddOns()
     {
-        $this->addOns['swagger'] = config('hemant.laravel_generator.add_on.swagger', false);
-        $this->addOns['tests'] = config('hemant.laravel_generator.add_on.tests', false);
-        $this->addOns['datatables'] = config('hemant.laravel_generator.add_on.datatables', false);
-        $this->addOns['menu.enabled'] = config('hemant.laravel_generator.add_on.menu.enabled', false);
-        $this->addOns['menu.menu_file'] = config('hemant.laravel_generator.add_on.menu.menu_file', 'layouts.menu');
+        $this->addOns['swagger'] = config('hemant.laravel_utils.add_on.swagger', false);
+        $this->addOns['tests'] = config('hemant.laravel_utils.add_on.tests', false);
+        $this->addOns['datatables'] = config('hemant.laravel_utils.add_on.datatables', false);
+        $this->addOns['menu.enabled'] = config('hemant.laravel_utils.add_on.menu.enabled', false);
+        $this->addOns['menu.menu_file'] = config('hemant.laravel_utils.add_on.menu.menu_file', 'layouts.menu');
     }
 }

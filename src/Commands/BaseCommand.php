@@ -195,7 +195,7 @@ class BaseCommand extends Command
             ];
         }
 
-        $path = config('hemant.laravel_generator.path.schema_files', base_path('resources/model_schemas/'));
+        $path = config('hemant.laravel_utils.path.schema_files', base_path('resources/model_schemas/'));
 
         $fileName = $this->commandData->modelName.'.json';
 
