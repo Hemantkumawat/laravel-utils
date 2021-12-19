@@ -1,8 +1,8 @@
 <?php
 
-namespace Hemant\LaravelUtils\Utils;
+namespace Hemant\Utils\Utils;
 
-use Hemant\LaravelUtils\Common\GeneratorField;
+use Hemant\Utils\Common\GeneratorField;
 
 class GeneratorFieldsInputUtil
 {

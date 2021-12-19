@@ -1,10 +1,10 @@
 <?php
 
-namespace Hemant\LaravelUtils\Generators;
+namespace Hemant\Utils\Generators;
 
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Utils\FileUtil;
-use Hemant\LaravelUtils\Utils\GeneratorFieldsInputUtil;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Utils\FileUtil;
+use Hemant\Utils\Utils\GeneratorFieldsInputUtil;
 
 class TestTraitGenerator extends BaseGenerator
 {

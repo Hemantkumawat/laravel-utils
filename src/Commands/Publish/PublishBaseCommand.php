@@ -1,9 +1,9 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands\Publish;
+namespace Hemant\Utils\Commands\Publish;
 
 use File;
-use Hemant\LaravelUtils\Commands\BaseCommand;
+use Hemant\Utils\Commands\BaseCommand;
 
 class PublishBaseCommand extends BaseCommand
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands\Scaffold;
+namespace Hemant\Utils\Commands\Scaffold;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
-use Hemant\LaravelUtils\Commands\BaseCommand;
-use Hemant\LaravelUtils\Common\CommandData;
+use Hemant\Utils\Commands\BaseCommand;
+use Hemant\Utils\Common\CommandData;
 use Symfony\Component\Console\Input\InputArgument;
 
 class AppGeneratorCommand extends BaseCommand

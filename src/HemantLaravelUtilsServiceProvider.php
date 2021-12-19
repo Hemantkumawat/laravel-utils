@@ -1,28 +1,28 @@
 <?php
 
-namespace Hemant\LaravelUtils;
+namespace Hemant\Utils;
 
 use Illuminate\Support\ServiceProvider;
-use Hemant\LaravelUtils\Commands\API\APIControllerGeneratorCommand;
-use Hemant\LaravelUtils\Commands\API\APIGeneratorCommand;
-use Hemant\LaravelUtils\Commands\API\APIRequestsGeneratorCommand;
-use Hemant\LaravelUtils\Commands\API\TestsGeneratorCommand;
-use Hemant\LaravelUtils\Commands\APIScaffoldGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Common\MigrationGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Common\ModelGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Common\RepositoryGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Publish\GeneratorPublishCommand;
-use Hemant\LaravelUtils\Commands\Publish\LayoutPublishCommand;
-use Hemant\LaravelUtils\Commands\Publish\PublishTemplateCommand;
-use Hemant\LaravelUtils\Commands\Publish\VueJsLayoutPublishCommand;
-use Hemant\LaravelUtils\Commands\RollbackGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Scaffold\AppGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Scaffold\ControllerGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Scaffold\RequestsGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Scaffold\RollbackAppGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Scaffold\ScaffoldGeneratorCommand;
-use Hemant\LaravelUtils\Commands\Scaffold\ViewsGeneratorCommand;
-use Hemant\LaravelUtils\Commands\VueJs\VueJsGeneratorCommand;
+use Hemant\Utils\Commands\API\APIControllerGeneratorCommand;
+use Hemant\Utils\Commands\API\APIGeneratorCommand;
+use Hemant\Utils\Commands\API\APIRequestsGeneratorCommand;
+use Hemant\Utils\Commands\API\TestsGeneratorCommand;
+use Hemant\Utils\Commands\APIScaffoldGeneratorCommand;
+use Hemant\Utils\Commands\Common\MigrationGeneratorCommand;
+use Hemant\Utils\Commands\Common\ModelGeneratorCommand;
+use Hemant\Utils\Commands\Common\RepositoryGeneratorCommand;
+use Hemant\Utils\Commands\Publish\GeneratorPublishCommand;
+use Hemant\Utils\Commands\Publish\LayoutPublishCommand;
+use Hemant\Utils\Commands\Publish\PublishTemplateCommand;
+use Hemant\Utils\Commands\Publish\VueJsLayoutPublishCommand;
+use Hemant\Utils\Commands\RollbackGeneratorCommand;
+use Hemant\Utils\Commands\Scaffold\AppGeneratorCommand;
+use Hemant\Utils\Commands\Scaffold\ControllerGeneratorCommand;
+use Hemant\Utils\Commands\Scaffold\RequestsGeneratorCommand;
+use Hemant\Utils\Commands\Scaffold\RollbackAppGeneratorCommand;
+use Hemant\Utils\Commands\Scaffold\ScaffoldGeneratorCommand;
+use Hemant\Utils\Commands\Scaffold\ViewsGeneratorCommand;
+use Hemant\Utils\Commands\VueJs\VueJsGeneratorCommand;
 
 class HemantLaravelUtilsServiceProvider extends ServiceProvider
 {

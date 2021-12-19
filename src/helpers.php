@@ -144,7 +144,7 @@ if (!function_exists('fill_field_template')) {
      *
      * @param array $variables
      * @param string $template
-     * @param \Hemant\LaravelUtils\Common\GeneratorField $field
+     * @param \Hemant\Utils\Common\GeneratorField $field
      *
      * @return string
      */
@@ -165,7 +165,7 @@ if (!function_exists('fill_template_with_field_data')) {
      * @param array $variables
      * @param array $fieldVariables
      * @param string $template
-     * @param \Hemant\LaravelUtils\Common\GeneratorField $field
+     * @param \Hemant\Utils\Common\GeneratorField $field
      *
      * @return string
      */
@@ -209,7 +209,7 @@ if (!function_exists('fill_template_with_field_data')) {
 //     * @param array $variables
 //     * @param array $fieldVariables
 //     * @param string $template
-//     * @param \Hemant\LaravelUtils\Common\GeneratorField $field
+//     * @param \Hemant\Utils\Common\GeneratorField $field
 //     *
 //     * @return string
 //     */

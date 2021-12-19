@@ -1,13 +1,13 @@
 <?php
 
-namespace Hemant\LaravelUtils\Generators;
+namespace Hemant\Utils\Generators;
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Common\GeneratorFieldRelation;
-use Hemant\LaravelUtils\Utils\FileUtil;
-use Hemant\LaravelUtils\Utils\TableFieldsGenerator;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Common\GeneratorFieldRelation;
+use Hemant\Utils\Utils\FileUtil;
+use Hemant\Utils\Utils\TableFieldsGenerator;
 
 class ModelGenerator extends BaseGenerator
 {
@@ -32,7 +32,7 @@ class ModelGenerator extends BaseGenerator
     /**
      * ModelGenerator constructor.
      *
-     * @param \Hemant\LaravelUtils\Common\CommandData $commandData
+     * @param \Hemant\Utils\Common\CommandData $commandData
      */
     public function __construct(CommandData $commandData)
     {

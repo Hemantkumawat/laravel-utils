@@ -1,10 +1,10 @@
 <?php
 
-namespace Hemant\LaravelUtils\Generators\Scaffold;
+namespace Hemant\Utils\Generators\Scaffold;
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-use Hemant\LaravelUtils\Common\CommandData;
+use Hemant\Utils\Common\CommandData;
 
 class RoutesGenerator
 {

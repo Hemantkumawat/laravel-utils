@@ -1,11 +1,11 @@
 <?php
 
-namespace Hemant\LaravelUtils\Generators\VueJs;
+namespace Hemant\Utils\Generators\VueJs;
 
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Generators\BaseGenerator;
-use Hemant\LaravelUtils\Utils\FileUtil;
-use Hemant\LaravelUtils\Utils\GeneratorFieldsInputUtil;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Generators\BaseGenerator;
+use Hemant\Utils\Utils\FileUtil;
+use Hemant\Utils\Utils\GeneratorFieldsInputUtil;
 
 class ViewGenerator extends BaseGenerator
 {

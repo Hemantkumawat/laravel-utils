@@ -1,6 +1,6 @@
 <?php
 
-namespace Hemant\LaravelUtils\Utils;
+namespace Hemant\Utils\Utils;
 
 class SchemaUtil
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands;
+namespace Hemant\Utils\Commands;
 
-use Hemant\LaravelUtils\Common\CommandData;
+use Hemant\Utils\Common\CommandData;
 
 class APIScaffoldGeneratorCommand extends BaseCommand
 {

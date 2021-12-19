@@ -1,10 +1,10 @@
 <?php
 
-namespace Hemant\LaravelUtils\Utils;
+namespace Hemant\Utils\Utils;
 
 use DB;
-use Hemant\LaravelUtils\Common\GeneratorField;
-use Hemant\LaravelUtils\Common\GeneratorFieldRelation;
+use Hemant\Utils\Common\GeneratorField;
+use Hemant\Utils\Common\GeneratorFieldRelation;
 
 class GeneratorForeignKey
 {

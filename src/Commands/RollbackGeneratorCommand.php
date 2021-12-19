@@ -1,27 +1,27 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands;
+namespace Hemant\Utils\Commands;
 
 use Illuminate\Console\Command;
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Generators\API\APIControllerGenerator;
-use Hemant\LaravelUtils\Generators\API\APIRequestGenerator;
-use Hemant\LaravelUtils\Generators\API\APIRoutesGenerator;
-use Hemant\LaravelUtils\Generators\API\APITestGenerator;
-use Hemant\LaravelUtils\Generators\MigrationGenerator;
-use Hemant\LaravelUtils\Generators\ModelGenerator;
-use Hemant\LaravelUtils\Generators\RepositoryGenerator;
-use Hemant\LaravelUtils\Generators\RepositoryTestGenerator;
-use Hemant\LaravelUtils\Generators\Scaffold\ControllerGenerator;
-use Hemant\LaravelUtils\Generators\Scaffold\MenuGenerator;
-use Hemant\LaravelUtils\Generators\Scaffold\RequestGenerator;
-use Hemant\LaravelUtils\Generators\Scaffold\RoutesGenerator;
-use Hemant\LaravelUtils\Generators\Scaffold\ViewGenerator;
-use Hemant\LaravelUtils\Generators\TestTraitGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\ControllerGenerator as VueJsControllerGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\ModelJsConfigGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\RoutesGenerator as VueJsRoutesGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\ViewGenerator as VueJsViewGenerator;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Generators\API\APIControllerGenerator;
+use Hemant\Utils\Generators\API\APIRequestGenerator;
+use Hemant\Utils\Generators\API\APIRoutesGenerator;
+use Hemant\Utils\Generators\API\APITestGenerator;
+use Hemant\Utils\Generators\MigrationGenerator;
+use Hemant\Utils\Generators\ModelGenerator;
+use Hemant\Utils\Generators\RepositoryGenerator;
+use Hemant\Utils\Generators\RepositoryTestGenerator;
+use Hemant\Utils\Generators\Scaffold\ControllerGenerator;
+use Hemant\Utils\Generators\Scaffold\MenuGenerator;
+use Hemant\Utils\Generators\Scaffold\RequestGenerator;
+use Hemant\Utils\Generators\Scaffold\RoutesGenerator;
+use Hemant\Utils\Generators\Scaffold\ViewGenerator;
+use Hemant\Utils\Generators\TestTraitGenerator;
+use Hemant\Utils\Generators\VueJs\ControllerGenerator as VueJsControllerGenerator;
+use Hemant\Utils\Generators\VueJs\ModelJsConfigGenerator;
+use Hemant\Utils\Generators\VueJs\RoutesGenerator as VueJsRoutesGenerator;
+use Hemant\Utils\Generators\VueJs\ViewGenerator as VueJsViewGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

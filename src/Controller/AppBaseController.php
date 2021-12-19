@@ -1,9 +1,9 @@
 <?php
 
-namespace Hemant\LaravelUtils\Controller;
+namespace Hemant\Utils\Controller;
 
 use App\Http\Controllers\Controller as Controller;
-use Hemant\LaravelUtils\Utils\ResponseUtil;
+use Hemant\Utils\Utils\ResponseUtil;
 use Response;
 
 // @TODO This class need to be removed once we release our first version.

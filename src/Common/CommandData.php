@@ -1,11 +1,11 @@
 <?php
 
-namespace Hemant\LaravelUtils\Common;
+namespace Hemant\Utils\Common;
 
 use Exception;
 use Illuminate\Console\Command;
-use Hemant\LaravelUtils\Utils\GeneratorFieldsInputUtil;
-use Hemant\LaravelUtils\Utils\TableFieldsGenerator;
+use Hemant\Utils\Utils\GeneratorFieldsInputUtil;
+use Hemant\Utils\Utils\TableFieldsGenerator;
 
 class CommandData
 {

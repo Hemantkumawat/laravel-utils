@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\API;
 
-use Hemant\LaravelUtils\Request\APIRequest;
-use Hemant\LaravelUtils\Utils\ResponseUtil;
+use Hemant\Utils\Request\APIRequest;
+use Hemant\Utils\Utils\ResponseUtil;
 use Illuminate\Contracts\Validation\Validator;
 use Response;
 

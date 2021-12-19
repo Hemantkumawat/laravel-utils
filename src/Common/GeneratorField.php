@@ -1,6 +1,6 @@
 <?php
 
-namespace Hemant\LaravelUtils\Common;
+namespace Hemant\Utils\Common;
 
 use Illuminate\Support\Str;
 

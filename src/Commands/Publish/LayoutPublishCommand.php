@@ -1,8 +1,8 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands\Publish;
+namespace Hemant\Utils\Commands\Publish;
 
-use Hemant\LaravelUtils\Utils\FileUtil;
+use Hemant\Utils\Utils\FileUtil;
 
 class LayoutPublishCommand extends PublishBaseCommand
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Hemant\LaravelUtils\Generators;
+namespace Hemant\Utils\Generators;
 
-use Hemant\LaravelUtils\Utils\FileUtil;
+use Hemant\Utils\Utils\FileUtil;
 
 class BaseGenerator
 {

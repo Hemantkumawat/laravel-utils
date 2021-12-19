@@ -1,10 +1,10 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands\Common;
+namespace Hemant\Utils\Commands\Common;
 
-use Hemant\LaravelUtils\Commands\BaseCommand;
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Generators\ModelGenerator;
+use Hemant\Utils\Commands\BaseCommand;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Generators\ModelGenerator;
 
 class ModelGeneratorCommand extends BaseCommand
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands\API;
+namespace Hemant\Utils\Commands\API;
 
-use Hemant\LaravelUtils\Commands\BaseCommand;
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Generators\API\APITestGenerator;
-use Hemant\LaravelUtils\Generators\RepositoryTestGenerator;
-use Hemant\LaravelUtils\Generators\TestTraitGenerator;
+use Hemant\Utils\Commands\BaseCommand;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Generators\API\APITestGenerator;
+use Hemant\Utils\Generators\RepositoryTestGenerator;
+use Hemant\Utils\Generators\TestTraitGenerator;
 
 class TestsGeneratorCommand extends BaseCommand
 {

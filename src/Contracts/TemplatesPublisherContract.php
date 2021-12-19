@@ -1,6 +1,6 @@
 <?php
 
-namespace Hemant\LaravelUtils\Contracts;
+namespace Hemant\Utils\Contracts;
 
 interface TemplatesPublisherContract
 {

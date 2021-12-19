@@ -1,18 +1,18 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands\VueJs;
+namespace Hemant\Utils\Commands\VueJs;
 
-use Hemant\LaravelUtils\Commands\BaseCommand;
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Generators\MigrationGenerator;
-use Hemant\LaravelUtils\Generators\ModelGenerator;
-use Hemant\LaravelUtils\Generators\RepositoryGenerator;
-use Hemant\LaravelUtils\Generators\Scaffold\MenuGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\APIRequestGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\ControllerGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\ModelJsConfigGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\RoutesGenerator;
-use Hemant\LaravelUtils\Generators\VueJs\ViewGenerator;
+use Hemant\Utils\Commands\BaseCommand;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Generators\MigrationGenerator;
+use Hemant\Utils\Generators\ModelGenerator;
+use Hemant\Utils\Generators\RepositoryGenerator;
+use Hemant\Utils\Generators\Scaffold\MenuGenerator;
+use Hemant\Utils\Generators\VueJs\APIRequestGenerator;
+use Hemant\Utils\Generators\VueJs\ControllerGenerator;
+use Hemant\Utils\Generators\VueJs\ModelJsConfigGenerator;
+use Hemant\Utils\Generators\VueJs\RoutesGenerator;
+use Hemant\Utils\Generators\VueJs\ViewGenerator;
 
 class VueJsGeneratorCommand extends BaseCommand
 {

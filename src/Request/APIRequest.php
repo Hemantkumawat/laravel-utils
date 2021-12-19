@@ -1,9 +1,9 @@
 <?php
 
-namespace Hemant\LaravelUtils\Request;
+namespace Hemant\Utils\Request;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Hemant\LaravelUtils\Utils\ResponseUtil;
+use Hemant\Utils\Utils\ResponseUtil;
 use Response;
 
 class APIRequest extends FormRequest

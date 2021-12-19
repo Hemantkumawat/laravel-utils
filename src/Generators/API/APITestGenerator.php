@@ -1,10 +1,10 @@
 <?php
 
-namespace Hemant\LaravelUtils\Generators\API;
+namespace Hemant\Utils\Generators\API;
 
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Generators\BaseGenerator;
-use Hemant\LaravelUtils\Utils\FileUtil;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Generators\BaseGenerator;
+use Hemant\Utils\Utils\FileUtil;
 
 class APITestGenerator extends BaseGenerator
 {

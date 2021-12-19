@@ -2,7 +2,7 @@
 
 namespace $NAMESPACE_APP$\Http\Controllers;
 
-use Hemant\LaravelUtils\Utils\ResponseUtil;
+use Hemant\Utils\Utils\ResponseUtil;
 use Response;
 
 /**

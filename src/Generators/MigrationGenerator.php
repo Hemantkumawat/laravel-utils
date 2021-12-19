@@ -1,11 +1,11 @@
 <?php
 
-namespace Hemant\LaravelUtils\Generators;
+namespace Hemant\Utils\Generators;
 
 use File;
 use Illuminate\Support\Str;
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Utils\FileUtil;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Utils\FileUtil;
 use SplFileInfo;
 
 class MigrationGenerator extends BaseGenerator

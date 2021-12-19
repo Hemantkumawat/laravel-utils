@@ -1,10 +1,10 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands\Scaffold;
+namespace Hemant\Utils\Commands\Scaffold;
 
-use Hemant\LaravelUtils\Commands\BaseCommand;
-use Hemant\LaravelUtils\Common\CommandData;
-use Hemant\LaravelUtils\Generators\Scaffold\ViewGenerator;
+use Hemant\Utils\Commands\BaseCommand;
+use Hemant\Utils\Common\CommandData;
+use Hemant\Utils\Generators\Scaffold\ViewGenerator;
 
 class ViewsGeneratorCommand extends BaseCommand
 {

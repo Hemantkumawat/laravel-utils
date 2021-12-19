@@ -1,6 +1,6 @@
 <?php
 
-namespace Hemant\LaravelUtils\Criteria;
+namespace Hemant\Utils\Criteria;
 
 use Illuminate\Http\Request;
 use Prettus\Repository\Contracts\CriteriaInterface;

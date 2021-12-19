@@ -1,9 +1,9 @@
 <?php
 
-namespace Hemant\LaravelUtils\Commands\API;
+namespace Hemant\Utils\Commands\API;
 
-use Hemant\LaravelUtils\Commands\BaseCommand;
-use Hemant\LaravelUtils\Common\CommandData;
+use Hemant\Utils\Commands\BaseCommand;
+use Hemant\Utils\Common\CommandData;
 
 class APIGeneratorCommand extends BaseCommand
 {
