@@ -24,7 +24,7 @@ use Hemant\LaravelUtils\Commands\Scaffold\ScaffoldGeneratorCommand;
 use Hemant\LaravelUtils\Commands\Scaffold\ViewsGeneratorCommand;
 use Hemant\LaravelUtils\Commands\VueJs\VueJsGeneratorCommand;
 
-class hemantGeneratorServiceProvider extends ServiceProvider
+class HemantLaravelUtilsServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
