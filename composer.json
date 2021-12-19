@@ -1,0 +1,57 @@
+{
+    "name": "hemant/laravel-utils",
+    "description": "Hemant Kumawat Laravel Utilities Generator",
+    "keywords": [
+        "laravel",
+        "api",
+        "model",
+        "request",
+        "migration",
+        "model",
+        "crud",
+        "repository",
+        "view",
+        "test",
+        "swagger",
+        "Hemant",
+        "kumawat",
+        "Utils"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hemant Kumawat",
+            "email": "hemantkumawat275@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.* || 6.* || 7.* || 8.*",
+        "prettus/l5-repository": ">=2.7.2",
+        "laracasts/flash": ">=3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=5.0",
+        "mockery/mockery": ">=0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hemant\\Utils\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Hemant\\LaravelUtils\\HemantLaravelUtilsServiceProvider"
+            ]
+        }
+    }
+}
